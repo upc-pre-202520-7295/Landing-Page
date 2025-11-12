@@ -12,6 +12,25 @@
     <a href="#main-content" class="skip-link" data-i18n="a11y.skipToMain">Skip to main content</a>
 
     <!-- Language Switcher -->
+    <div class="language-switcher" role="navigation" aria-label="Language selection">
+        <button 
+            id="langToggle" 
+            class="lang-button" 
+            aria-label="Change language"
+            aria-expanded="false"
+            aria-controls="langMenu">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" x2="22" y1="12" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span id="currentLang">EN</span>
+        </button>
+        <div id="langMenu" class="lang-menu" role="menu" aria-hidden="true">
+            <button class="lang-option" data-lang="en" role="menuitem">🇺🇸 English</button>
+            <button class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</button>
+        </div>
+    </div>
         
 
     <!-- Hero Section -->
